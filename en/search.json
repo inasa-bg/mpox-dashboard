@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "methodes.html",
+    "href": "methodes.html",
+    "title": "Methods and data quality",
+    "section": "",
+    "text": "Data as of 9 Oct 2026, page generated on 14 Oct 2026"
+  },
+  {
+    "objectID": "methodes.html#data-sources",
+    "href": "methodes.html#data-sources",
+    "title": "Methods and data quality",
+    "section": "Data sources",
+    "text": "Data sources\n\nCase line list (notification and investigation form): 166 notified cases, from 29 Jan 2026 to 9 Oct 2026.\nContact follow-up database: 387 contacts and 2,917 follow-up visits.\nBase maps: 117 health areas and 11 health regions.\nResponse timeline: MINSAP/INASA, SGI-Mpox.\n\nThe data are managed by INASA. This site is regenerated automatically from these sources; the data cut-off is the most recent notification date in the line list."
+  },
+  {
+    "objectID": "methodes.html#definitions",
+    "href": "methodes.html#definitions",
+    "title": "Methods and data quality",
+    "section": "Definitions",
+    "text": "Definitions\n\nNotified (suspected) case: any person notified under the national case definition, whatever the laboratory result.\nConfirmed case: notified case with a positive mpox RT-PCR.\nNot confirmed: notified case with a negative RT-PCR (“descartado”).\nPending: notified case whose laboratory result is not yet available or inconclusive.\nEpidemiological week: ISO 8601 week, Monday to Sunday (W39 = week 39).\nReference date for curves: date of symptom onset; if missing, date of notification.\nContact under follow-up: contact whose planned end of follow-up (21 days after the last exposure) has not yet been reached, with no closing visit and who has not become a case."
+  },
+  {
+    "objectID": "methodes.html#data-protection",
+    "href": "methodes.html#data-protection",
+    "title": "Methods and data quality",
+    "section": "Data protection",
+    "text": "Data protection\nNo personal data are published on this site: no names, no case or contact identifiers, no addresses, no occupations. Index cases are labelled with a sequence number (“Index case 1”, “Index case 2”…). Individual records are used only for the calculations, on a controlled computer or server, and only aggregated results are published. Figures based on very small numbers (one or two people in a health area) should be interpreted and shared with care."
+  },
+  {
+    "objectID": "methodes.html#data-quality",
+    "href": "methodes.html#data-quality",
+    "title": "Methods and data quality",
+    "section": "Data quality",
+    "text": "Data quality\n\n\n\n\n\n\n\nHow to read: these indicators flag data to complete or correct in INASA’s database. Outliers are never corrected automatically: they are excluded from the calculation concerned and counted here. Because case identifiers are typed freely (spaces, hyphens, 2- or 4-digit years), contacts are linked to cases through a “region-zone-number” key extracted from the identifier, without approximate matching; a contact whose key matches no case stays unlinked."
+  },
+  {
+    "objectID": "methodes.html#analysis-methods",
+    "href": "methodes.html#analysis-methods",
+    "title": "Methods and data quality",
+    "section": "Analysis methods",
+    "text": "Analysis methods\n\nCurves and maps: raw counts by epidemiological week and by health area or region. Population data are not yet integrated, so no incidence rates are calculated.\nPositivity rate: confirmed cases / cases tested with a result (pending cases excluded).\nEffective reproduction number (Rt): EpiEstim parametric method (Cori et al., 2013) over sliding 14-day windows, from confirmed cases by date of symptom onset; serial interval of 8.5 days (standard deviation 5.0 days), from Miura et al., Emerging Infectious Diseases 2023 (2022 outbreak in the United States). This interval was not measured locally and numbers are small: estimates are indicative.\nSymptoms: confirmed vs not confirmed compared with Fisher’s exact test, odds ratios with 95% confidence intervals; combinations computed only on cases with all the signs concerned recorded; sensitivity, specificity and predictive values computed against the RT-PCR result.\nActive contacts: contacts for whom the current date falls between the start and the planned end of their 21-day follow-up."
+  },
+  {
+    "objectID": "methodes.html#limitations",
+    "href": "methodes.html#limitations",
+    "title": "Methods and data quality",
+    "section": "Limitations",
+    "text": "Limitations\n\nThe last two weeks are incomplete (reporting and laboratory delays).\nThe notification form has no field yet on case outcome: deaths are not shown.\nHospitalisation, isolation and epidemiological link are not shown, for lack of reliable information in the forms.\nThe contact database no longer has an explicit follow-up status: status is derived from visits (“Terminado” visit = follow-up completed; “Tornou-se caso” = became a case; planned end not yet reached = under follow-up; end passed without a closing visit = “not closed”).\nSymptom comparisons rest on 29 confirmed cases: confidence intervals are wide."
+  },
+  {
+    "objectID": "methodes.html#updates",
+    "href": "methodes.html#updates",
+    "title": "Methods and data quality",
+    "section": "Updates",
+    "text": "Updates\nThe site is regenerated whenever INASA updates the data: all results are recalculated from the database, with no manual entry. Only the background text on the home page and the timeline are edited by hand."
+  },
+  {
+    "objectID": "symptomes.html",
+    "href": "symptomes.html",
+    "title": "Symptom analysis",
+    "section": "",
+    "text": "Data as of 9 Oct 2026\nThis page compares the clinical signs of the 29 confirmed cases and the 137 suspected cases that were not confirmed (negative RT-PCR). The 0 cases awaiting a result are excluded. A “no information” answer is never counted as “no”: the case is left out of the calculation for that symptom."
+  },
+  {
+    "objectID": "symptomes.html#frequency-of-each-symptom",
+    "href": "symptomes.html#frequency-of-each-symptom",
+    "title": "Symptom analysis",
+    "section": "Frequency of each symptom",
+    "text": "Frequency of each symptom\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: each line joins the frequency of a symptom among non-confirmed cases (blue) and confirmed cases (red). The wider the gap, the better the symptom separates confirmed cases. The odds ratio (OR) measures this association: an OR above 1 means the symptom is more frequent among confirmed cases. With 29 confirmed cases the confidence intervals are wide, and a non-significant difference (p ≥ 0.05) does not show that there is no association."
+  },
+  {
+    "objectID": "symptomes.html#combinations-of-main-signs",
+    "href": "symptomes.html#combinations-of-main-signs",
+    "title": "Symptom analysis",
+    "section": "Combinations of main signs",
+    "text": "Combinations of main signs\nCombinations of fever, skin rash and lymphadenopathy, among cases with all three signs recorded.\n\n\n\n\n\n\n\n\n\n\nHow to read: each row is a combination of signs (joined black dots); the bar gives the number of cases with that combination, split into confirmed (red) and not confirmed (blue). The share confirmed is shown only from 5 cases upwards. Analysis of 157 cases (9 excluded for missing information on one of the three signs)."
+  },
+  {
+    "objectID": "symptomes.html#combinations-of-lesion-types",
+    "href": "symptomes.html#combinations-of-lesion-types",
+    "title": "Symptom analysis",
+    "section": "Combinations of lesion types",
+    "text": "Combinations of lesion types\nStages of skin lesions (macules, papules, vesicles, pustules, crusts) among cases with a rash.\n\n\n\n\n\n\n\n\n\n\nHow to read: classically, mpox lesions progress at the same pace, whereas chickenpox lesions appear at different stages at the same time; but during the global clade IIb outbreak of 2022, lesions at different stages were often seen in mpox cases. Lesion stage alone therefore cannot tell the two diseases apart. Analysis of 111 cases with a rash (16 excluded for missing information on one of the lesion types). The 12 most frequent combinations are shown."
+  },
+  {
+    "objectID": "symptomes.html#how-well-each-sign-predicts-confirmation",
+    "href": "symptomes.html#how-well-each-sign-predicts-confirmation",
+    "title": "Symptom analysis",
+    "section": "How well each sign predicts confirmation",
+    "text": "How well each sign predicts confirmation\n\n\n\n\n\n\n\nHow to read: sensitivity is the share of confirmed cases that had the sign; specificity, the share of non-confirmed cases that did not. The positive predictive value (PPV) is the probability that a case with the sign is confirmed, in the population tested here: it depends on the positivity rate (17.5%) and does not carry over to another population. These indicators help assess the case definition."
+  },
+  {
+    "objectID": "cartes.html",
+    "href": "cartes.html",
+    "title": "Maps",
+    "section": "",
+    "text": "Data as of 9 Oct 2026\nUse the menu at the top left of each map to zoom on a region; hover over an area to see its figures. Grey areas have notified no cases."
+  },
+  {
+    "objectID": "cartes.html#cumulative-cases-by-health-area",
+    "href": "cartes.html#cumulative-cases-by-health-area",
+    "title": "Maps",
+    "section": "Cumulative cases by health area",
+    "text": "Cumulative cases by health area\n\nNotified casesConfirmed casesBy health region\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: 34 of the country’s 117 health areas have notified at least one case, and 11 have at least one confirmed case. The Bissau region (SAB) accounts for 90 of the 166 notified cases over a small area: the “SAB (Bissau)” zoom shows its health areas."
+  },
+  {
+    "objectID": "cartes.html#week-by-week-evolution",
+    "href": "cartes.html#week-by-week-evolution",
+    "title": "Maps",
+    "section": "Week-by-week evolution",
+    "text": "Week-by-week evolution\n\n\n\n\n▶ Play\n\n\n\n\n\n\n\n\n\nHow to read: move the slider or click “Play” to step through the weeks since June 2026 (week of symptom onset). Top: cases that week; bottom: cumulative since 1 June. Bissau’s health areas are small at country scale: to see them in detail, use the “SAB (Bissau)” zoom on the interactive maps above."
+  },
+  {
+    "objectID": "cartes.html#status-of-affected-health-areas",
+    "href": "cartes.html#status-of-affected-health-areas",
+    "title": "Maps",
+    "section": "Status of affected health areas",
+    "text": "Status of affected health areas\n\n\n\n\n\n\n\nStatus is based on the notification date of each area’s last confirmed case: under 21 days, transmission possible; 21 to 42 days, enhanced surveillance; over 42 days, no case for two incubation periods (21 days each). Areas with no confirmed case are listed if they notified a suspected case in the last 21 days. Current count: 4 area(s) where transmission is possible, 5 under enhanced surveillance, 2 with no case for more than 42 days."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mpox outbreak in Guinea-Bissau",
+    "section": "",
+    "text": "Data as of 9 Oct 2026 (W41-2026), page generated on 14 Oct 2026\nNotified cases\n166\nsuspected, all statuses\n\n\nConfirmed cases\n29\npositive RT-PCR\n\n\nPositivity rate\n17.5%\namong the 166 cases tested with a result\n\n\nRegions affected\n3\nwith at least one confirmed case, in 11 health areas\n\n\nContacts under follow-up\n17\nof 387 contacts identified\n\n\nClade\nIIb\nsequencing of 5 July 2026"
+  },
+  {
+    "objectID": "index.html#background",
+    "href": "index.html#background",
+    "title": "Mpox outbreak in Guinea-Bissau",
+    "section": "Background",
+    "text": "Background\nThe first case of the current mpox outbreak had symptom onset on 13 June 2026 and was laboratory-confirmed on 23 June 2026. The Ministry of Public Health (MINSAP) officially declared the outbreak on 4 July 2026, and sequencing identified clade IIb on 5 July 2026. The response is coordinated by the incident management system (SGI-Mpox), activated on 1 July 2026, with support from the National Institute of Public Health (INASA) and WHO.\nThe outbreak first affected the Bissau health region (SAB), then Biombo (first confirmed case on 13 July 2026) and Bafatá (14 September 2026). This dashboard presents data from the case line list and the contact follow-up database, and is updated whenever INASA publishes new data."
+  },
+  {
+    "objectID": "index.html#situation-at-a-glance",
+    "href": "index.html#situation-at-a-glance",
+    "title": "Mpox outbreak in Guinea-Bissau",
+    "section": "Situation at a glance",
+    "text": "Situation at a glance\n\n25 cases notified in the last 14 days (26 Sep 2026 to 9 Oct 2026), of which 6 confirmed (−47% compared with the previous two weeks).\nLast confirmed case notified on 7 Oct 2026, 2 days ago.\nConfirmed cases by region: SAB (Bissau) (23), Bafatá (3), Biombo (3).\n17 contacts are still under follow-up; 252 completed the 21-day follow-up and 3 became cases.\nOn 5 Oct 2026 (latest available window), Rt is estimated at 1.24 (95% CrI: 0.50–2.32), that is above 1 for the central estimate, but the credible interval includes 1: an increase cannot be concluded. Details on the Epidemiological situation page."
+  },
+  {
+    "objectID": "index.html#response-timeline",
+    "href": "index.html#response-timeline",
+    "title": "Mpox outbreak in Guinea-Bissau",
+    "section": "Response timeline",
+    "text": "Response timeline\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe curve under the timeline shows cases by week of symptom onset."
+  },
+  {
+    "objectID": "situation.html",
+    "href": "situation.html",
+    "title": "Epidemiological situation",
+    "section": "",
+    "text": "Data as of 9 Oct 2026"
+  },
+  {
+    "objectID": "situation.html#epidemic-curve",
+    "href": "situation.html#epidemic-curve",
+    "title": "Epidemiological situation",
+    "section": "Epidemic curve",
+    "text": "Epidemic curve\nPick a region in the menu at the top left of the chart to show its curve. Bars are stacked by status; hover over a bar for details.\n\nWeek of symptom onsetWeek of notification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: the date of symptom onset places the time of infection; the notification date reflects surveillance activity. The last two weeks are incomplete (reporting and laboratory delays) and are likely to be revised upwards. All cases have a recorded date of symptom onset."
+  },
+  {
+    "objectID": "situation.html#weekly-positivity-rate",
+    "href": "situation.html#weekly-positivity-rate",
+    "title": "Epidemiological situation",
+    "section": "Weekly positivity rate",
+    "text": "Weekly positivity rate\n\n\n\n\n\n\n\nHow to read: point size is proportional to the number of cases tested that week. When positivity falls while notifications rise, case finding has usually widened (a more sensitive case definition, active case search). Since June 2026: 18.4% (29/158)."
+  },
+  {
+    "objectID": "situation.html#summary-by-health-region",
+    "href": "situation.html#summary-by-health-region",
+    "title": "Epidemiological situation",
+    "section": "Summary by health region",
+    "text": "Summary by health region\n\n\n\n\n\n\n\nColumns W38, W39, W40, W41 give, for the last 4 epidemiological weeks (symptom onset), “notified cases / of which confirmed”. Deaths are not yet collected by the notification form."
+  },
+  {
+    "objectID": "situation.html#notified-cases-by-region-and-week",
+    "href": "situation.html#notified-cases-by-region-and-week",
+    "title": "Epidemiological situation",
+    "section": "Notified cases by region and week",
+    "text": "Notified cases by region and week\n\n\n\n\n\n\n\nHow to read: each cell gives the number of notified cases (all statuses) in a region during one week; a grey cell means no cases. It shows the geographic spread of the outbreak and the regions where notifications continue."
+  },
+  {
+    "objectID": "situation.html#situation-by-region-with-affected-health-areas",
+    "href": "situation.html#situation-by-region-with-affected-health-areas",
+    "title": "Epidemiological situation",
+    "section": "Situation by region, with affected health areas",
+    "text": "Situation by region, with affected health areas\nSelect a tab to see, within a region, the health areas that notified at least one case.\n\nSAB (Bissau)BiomboBafatáGabúTombaliBolamaCacheuOioBijagósQuínara\n\n\n90 notified cases, of which 23 confirmed, in 9 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nCMI\n\n\n41\n\n\n13\n\n\n13 Jul 2026\n\n\n7 Oct 2026\n\n\n2\n\n\n\n\nBelem\n\n\n4\n\n\n3\n\n\n12 Aug 2026\n\n\n25 Sep 2026\n\n\n14\n\n\n\n\nBairro Militar\n\n\n12\n\n\n2\n\n\n10 Jul 2026\n\n\n22 Sep 2026\n\n\n17\n\n\n\n\nAntula\n\n\n9\n\n\n1\n\n\n19 Jul 2026\n\n\n26 Sep 2026\n\n\n13\n\n\n\n\nBandim\n\n\n8\n\n\n1\n\n\n15 May 2026\n\n\n15 Sep 2026\n\n\n24\n\n\n\n\nPlack 2\n\n\n8\n\n\n1\n\n\n13 Jul 2026\n\n\n15 Sep 2026\n\n\n24\n\n\n\n\nCuntum\n\n\n1\n\n\n1\n\n\n22 Jun 2026\n\n\n22 Jun 2026\n\n\n109\n\n\n\n\nLuanda\n\n\n1\n\n\n1\n\n\n20 Sep 2026\n\n\n20 Sep 2026\n\n\n19\n\n\n\n\nBairro de Ajuda\n\n\n6\n\n\n0\n\n\n28 Aug 2026\n\n\n29 Sep 2026\n\n\n10\n\n\n\n\n\n\n\n\n27 notified cases, of which 3 confirmed, in 6 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nSafim\n\n\n9\n\n\n2\n\n\n13 Jul 2026\n\n\n28 Sep 2026\n\n\n11\n\n\n\n\nCumura\n\n\n7\n\n\n1\n\n\n7 Jul 2026\n\n\n17 Sep 2026\n\n\n22\n\n\n\n\nQuinhamel\n\n\n6\n\n\n0\n\n\n29 Jan 2026\n\n\n1 Oct 2026\n\n\n8\n\n\n\n\nOndame\n\n\n2\n\n\n0\n\n\n7 Sep 2026\n\n\n7 Sep 2026\n\n\n32\n\n\n\n\nPrabis\n\n\n2\n\n\n0\n\n\n25 Sep 2026\n\n\n25 Sep 2026\n\n\n14\n\n\n\n\nIlonde\n\n\n1\n\n\n0\n\n\n28 Jul 2026\n\n\n28 Jul 2026\n\n\n73\n\n\n\n\n\n\n\n\n15 notified cases, of which 3 confirmed, in 2 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nBafata\n\n\n12\n\n\n3\n\n\n7 Apr 2026\n\n\n9 Oct 2026\n\n\n0\n\n\n\n\nBambadinca\n\n\n3\n\n\n0\n\n\n5 Apr 2026\n\n\n8 Apr 2026\n\n\n184\n\n\n\n\n\n\n\n\n14 notified cases, of which 0 confirmed, in 6 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nGabu\n\n\n7\n\n\n0\n\n\n14 Jul 2026\n\n\n29 Sep 2026\n\n\n10\n\n\n\n\nPitche\n\n\n2\n\n\n0\n\n\n26 Sep 2026\n\n\n27 Sep 2026\n\n\n12\n\n\n\n\nSonaco\n\n\n2\n\n\n0\n\n\n21 Sep 2026\n\n\n21 Sep 2026\n\n\n18\n\n\n\n\nBuruntuma\n\n\n1\n\n\n0\n\n\n1 Sep 2026\n\n\n1 Sep 2026\n\n\n38\n\n\n\n\nCanjufa\n\n\n1\n\n\n0\n\n\n13 Jul 2026\n\n\n13 Jul 2026\n\n\n88\n\n\n\n\nFasse\n\n\n1\n\n\n0\n\n\n22 Jul 2026\n\n\n22 Jul 2026\n\n\n79\n\n\n\n\n\n\n\n\n9 notified cases, of which 0 confirmed, in 4 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nCalaque\n\n\n3\n\n\n0\n\n\n21 Aug 2026\n\n\n24 Aug 2026\n\n\n46\n\n\n\n\nCatio\n\n\n3\n\n\n0\n\n\n28 Jul 2026\n\n\n1 Sep 2026\n\n\n38\n\n\n\n\nTimbo\n\n\n2\n\n\n0\n\n\n3 Aug 2026\n\n\n18 Sep 2026\n\n\n21\n\n\n\n\nQuebo\n\n\n1\n\n\n0\n\n\n2 Aug 2026\n\n\n2 Aug 2026\n\n\n68\n\n\n\n\n\n\n\n\n5 notified cases, of which 0 confirmed, in 1 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nBolama\n\n\n5\n\n\n0\n\n\n17 Sep 2026\n\n\n8 Oct 2026\n\n\n1\n\n\n\n\n\n\n\n\n2 notified cases, of which 0 confirmed, in 2 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nCacheu\n\n\n1\n\n\n0\n\n\n23 Apr 2026\n\n\n23 Apr 2026\n\n\n169\n\n\n\n\nSao Domingos\n\n\n1\n\n\n0\n\n\n26 Jul 2026\n\n\n26 Jul 2026\n\n\n75\n\n\n\n\n\n\n\n\n2 notified cases, of which 0 confirmed, in 2 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nMansaba\n\n\n1\n\n\n0\n\n\n20 Aug 2026\n\n\n20 Aug 2026\n\n\n50\n\n\n\n\nNhacra\n\n\n1\n\n\n0\n\n\n19 Aug 2026\n\n\n19 Aug 2026\n\n\n51\n\n\n\n\n\n\n\n\n1 notified cases, of which 0 confirmed, in 1 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nBubaque\n\n\n1\n\n\n0\n\n\n7 Aug 2026\n\n\n7 Aug 2026\n\n\n63\n\n\n\n\n\n\n\n\n1 notified cases, of which 0 confirmed, in 1 health area(s).\n\n\n\n\n\nHealth area\n\n\nNotified\n\n\nConfirmed\n\n\nFirst case\n\n\nLast case\n\n\nDays without a new case\n\n\n\n\n\n\nBuba\n\n\n1\n\n\n0\n\n\n12 Sep 2026\n\n\n12 Sep 2026\n\n\n27"
+  },
+  {
+    "objectID": "situation.html#effective-reproduction-number-rt",
+    "href": "situation.html#effective-reproduction-number-rt",
+    "title": "Epidemiological situation",
+    "section": "Effective reproduction number (Rt)",
+    "text": "Effective reproduction number (Rt)\n\n\n\n\n\n\n\nOn 5 Oct 2026 (latest available window), Rt is estimated at 1.24 (95% CrI: 0.50–2.32), that is above 1 for the central estimate, but the credible interval includes 1: an increase cannot be concluded. Two weeks earlier (21 Sep 2026), it was 0.76: the recent trend is upward, after reaching 1.78 on 26 Sep 2026. Over the last 4 weeks, the central estimate was above 1 on 64.3% of days, and the whole interval was above 1 on 0.0%. The highest value (5.64, on 11 Jul 2026) dates from a period with few cases, when a small cluster is enough to push the estimate up sharply. Estimates for the last few days are the least reliable: cases with recent symptom onset have not all been reported yet, which pulls Rt down at the end of the period.\n\n\nReading Rt: Rt is the average number of people infected by each case at a given date; above 1 (dashed line) the outbreak is growing, below 1 it is declining. It is estimated over sliding 14-day windows from confirmed cases only, by date of symptom onset (EpiEstim parametric method), with a serial interval of 8.5 days on average (standard deviation 5.0 days) taken from the 2022 outbreak in the United States (Miura et al., Emerg Infect Dis 2023), not measured in Guinea-Bissau. With 29 confirmed cases the intervals are wide: the interpretation above is recalculated at each update and only calls a trend clear when the whole interval lies on one side of 1."
+  },
+  {
+    "objectID": "contacts.html",
+    "href": "contacts.html",
+    "title": "Contact follow-up",
+    "section": "",
+    "text": "Data as of 9 Oct 2026\nContacts identified\n387\nafter removing 2 duplicate(s)\n\n\nUnder follow-up\n17\n17 finish their 21 days within 7 days\n\n\nFollow-up completed (21 d)\n252\n65.1%; 115 passed the end date without closure\n\n\nBecame cases\n3\namong contacts followed\n\n\nIndex cases\n28\n13.8 contacts per index case on average\n\n\nFollow-up visits\n2,917\n1 with symptoms reported"
+  },
+  {
+    "objectID": "contacts.html#contacts-under-follow-up-over-time",
+    "href": "contacts.html#contacts-under-follow-up-over-time",
+    "title": "Contact follow-up",
+    "section": "Contacts under follow-up over time",
+    "text": "Contacts under follow-up over time\n\n\n\n\n\n\n\nHow to read: number of contacts who are, on each day, within their 21-day follow-up period (from the start of follow-up to the planned end date). On 9 Oct 2026, 22 contacts are within this period; the database lists 17 as “under follow-up”. A gap between the two figures points to statuses that need updating in the database.\n\n\nNew contacts per week, by current status"
+  },
+  {
+    "objectID": "contacts.html#location-of-contacts",
+    "href": "contacts.html#location-of-contacts",
+    "title": "Contact follow-up",
+    "section": "Location of contacts",
+    "text": "Location of contacts\n\nContacts under follow-upAll contacts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocation recorded in the contact database (the contact’s residence), which may differ from the index case’s. 14 contact(s) have no health area matching the base map and are not shown on the map."
+  },
+  {
+    "objectID": "contacts.html#symptom-onset-among-contacts",
+    "href": "contacts.html#symptom-onset-among-contacts",
+    "title": "Contact follow-up",
+    "section": "Symptom onset among contacts",
+    "text": "Symptom onset among contacts\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: 1 of the 2,917 follow-up visits (0.0%) recorded at least one symptom, concerning 1 of 387 contacts. 3 contact(s) became cases. Each contact received a median of 6 visits."
+  },
+  {
+    "objectID": "contacts.html#contacts-per-index-case",
+    "href": "contacts.html#contacts-per-index-case",
+    "title": "Contact follow-up",
+    "section": "Contacts per index case",
+    "text": "Contacts per index case\n\n\n\n\n\n\n\nHow to read: the 20 index cases with the most contacts (of 28), with the follow-up status of those contacts. Index cases are numbered by decreasing number of contacts; their identifiers are not published. Median: 15.5 contacts per index case (range 1 to 38); 14 index cases match a confirmed case in the line list."
+  },
+  {
+    "objectID": "contacts.html#type-of-exposure",
+    "href": "contacts.html#type-of-exposure",
+    "title": "Contact follow-up",
+    "section": "Type of exposure",
+    "text": "Type of exposure"
+  },
+  {
+    "objectID": "profil.html",
+    "href": "profil.html",
+    "title": "Case profile",
+    "section": "",
+    "text": "Data as of 9 Oct 2026"
+  },
+  {
+    "objectID": "profil.html#age-pyramid",
+    "href": "profil.html#age-pyramid",
+    "title": "Case profile",
+    "section": "Age pyramid",
+    "text": "Age pyramid\n\nConfirmed casesAll notified cases\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: of the 29 confirmed cases, 16 are male and 13 female (M/F ratio: 1.23); the median age is 28 years. 4 confirmed case(s) are under 15."
+  },
+  {
+    "objectID": "profil.html#time-to-detection-and-testing",
+    "href": "profil.html#time-to-detection-and-testing",
+    "title": "Case profile",
+    "section": "Time to detection and testing",
+    "text": "Time to detection and testing\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to read: the interval from symptom onset to notification measures how fast cases are detected; the next two measure how fast they are confirmed by the laboratory. Boxes run from the first to the third quartile and the central line is the median. 15 intervals that are negative or longer than 60 days, probably date entry errors, are excluded (see the Methods page)."
+  },
+  {
+    "objectID": "profil.html#specimen-type",
+    "href": "profil.html#specimen-type",
+    "title": "Case profile",
+    "section": "Specimen type",
+    "text": "Specimen type"
+  }
+]
