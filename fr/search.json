@@ -1,0 +1,268 @@
+[
+  {
+    "objectID": "methodes.html",
+    "href": "methodes.html",
+    "title": "Méthodes et qualité des données",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026"
+  },
+  {
+    "objectID": "methodes.html#sources-des-données",
+    "href": "methodes.html#sources-des-données",
+    "title": "Méthodes et qualité des données",
+    "section": "Sources des données",
+    "text": "Sources des données\n\nListe linéaire des cas (formulaire de notification et d’investigation) : 181 cas notifiés, du 29 janv. 2026 au 19 oct. 2026.\nBase de suivi des contacts : 387 contacts et 2 917 visites de suivi.\nFonds de carte : 117 aires sanitaires et 11 régions sanitaires.\nChronologie de la riposte : MINSAP/INASA, SGI-Mpox.\n\nLes données sont gérées par l’INASA. Ce site est régénéré automatiquement à partir de ces sources ; la date d’arrêt des données est la date de notification la plus récente de la liste linéaire."
+  },
+  {
+    "objectID": "methodes.html#définitions",
+    "href": "methodes.html#définitions",
+    "title": "Méthodes et qualité des données",
+    "section": "Définitions",
+    "text": "Définitions\n\nCas notifié (suspect) : toute personne notifiée selon la définition de cas nationale, quel que soit le résultat de laboratoire.\nCas confirmé : cas notifié avec une RT-PCR mpox positive.\nCas non confirmé : cas notifié avec une RT-PCR négative (« descartado »).\nEn attente : cas notifié dont le résultat de laboratoire n’est pas encore disponible ou est non concluant.\nSemaine épidémiologique (SE) : semaine ISO 8601, du lundi au dimanche (S39 = semaine 39).\nDate de référence des courbes : date de début des symptômes ; à défaut, date de notification.\nContact en cours de suivi : contact dont la fin de suivi prévue (21 jours après le dernier contact) n’est pas encore atteinte et qui n’a ni visite de clôture ni passage au statut de cas."
+  },
+  {
+    "objectID": "methodes.html#protection-des-données",
+    "href": "methodes.html#protection-des-données",
+    "title": "Méthodes et qualité des données",
+    "section": "Protection des données",
+    "text": "Protection des données\nAucune donnée nominative n’est publiée sur ce site : ni nom, ni identifiant de cas ou de contact, ni adresse, ni profession. Les cas index sont désignés par un numéro d’ordre (« Cas index 1 », « Cas index 2 »…). Les données individuelles servent uniquement au calcul, sur un poste ou un serveur contrôlé, et seuls les résultats agrégés sont mis en ligne. Les chiffres portant sur de très petits effectifs (une ou deux personnes dans une aire sanitaire) doivent être interprétés et diffusés avec prudence."
+  },
+  {
+    "objectID": "methodes.html#qualité-des-données",
+    "href": "methodes.html#qualité-des-données",
+    "title": "Méthodes et qualité des données",
+    "section": "Qualité des données",
+    "text": "Qualité des données\n\n\n\n\n\n\n\nLecture : ces indicateurs signalent les données à compléter ou à corriger dans la base de l’INASA. Les valeurs aberrantes ne sont jamais corrigées automatiquement : elles sont exclues du calcul concerné et comptées ici. Les identifiants de cas étant saisis librement (espaces, tirets, années à 2 ou 4 chiffres), les contacts sont reliés aux cas par une clé « région-zone-numéro » extraite de l’identifiant, sans rapprochement approximatif ; un contact dont la clé ne correspond à aucun cas reste non relié."
+  },
+  {
+    "objectID": "methodes.html#méthodes-danalyse",
+    "href": "methodes.html#méthodes-danalyse",
+    "title": "Méthodes et qualité des données",
+    "section": "Méthodes d’analyse",
+    "text": "Méthodes d’analyse\n\nCourbes et cartes : effectifs bruts par semaine épidémiologique et par aire ou région sanitaire. Faute de données de population intégrées au pipeline, aucun taux d’incidence n’est calculé.\nTaux de positivité : cas confirmés / cas testés avec résultat (cas en attente exclus).\nNombre de reproduction effectif (Rt) : méthode paramétrique EpiEstim (Cori et al., 2013) sur des fenêtres glissantes de 14 jours, à partir des cas confirmés par date de début des symptômes ; intervalle sériel de 8,5 jours (écart-type 5,0 jours), d’après Miura et al., Emerging Infectious Diseases 2023 (épidémie de 2022 aux États-Unis). Cet intervalle n’est pas mesuré localement et les effectifs sont faibles : les estimations sont indicatives.\nSymptômes : comparaison confirmés / non confirmés par le test exact de Fisher, odds ratios avec intervalle de confiance à 95 % ; combinaisons calculées sur les seuls cas renseignés pour tous les signes concernés ; sensibilité, spécificité et valeurs prédictives calculées par rapport au résultat RT-PCR.\nContacts actifs : contacts dont la date du jour se situe entre le début et la fin prévue de leur suivi de 21 jours."
+  },
+  {
+    "objectID": "methodes.html#limites",
+    "href": "methodes.html#limites",
+    "title": "Méthodes et qualité des données",
+    "section": "Limites",
+    "text": "Limites\n\nLes deux dernières semaines sont incomplètes (délais de notification et de résultat).\nLe formulaire de notification ne comporte pas encore de champ sur l’évolution du cas : les décès ne sont pas présentés.\nL’hospitalisation, l’isolement et le lien épidémiologique ne sont pas présentés, faute d’information fiable dans les fiches.\nLa base de contacts ne comporte plus de statut de suivi explicite : le statut est déduit des visites (visite « Terminado » = suivi terminé ; « Tornou-se caso » = devenu cas ; fin de suivi prévue à venir = en cours ; fin dépassée sans visite de clôture = « non clôturé »).\nLes comparaisons de symptômes portent sur 33 cas confirmés : les intervalles de confiance sont larges."
+  },
+  {
+    "objectID": "methodes.html#mise-à-jour",
+    "href": "methodes.html#mise-à-jour",
+    "title": "Méthodes et qualité des données",
+    "section": "Mise à jour",
+    "text": "Mise à jour\nLe site est régénéré à chaque mise à jour des données par l’INASA : tous les résultats sont recalculés à partir de la base, sans saisie manuelle. Seuls le texte de contexte de la page d’accueil et la chronologie sont modifiés à la main."
+  },
+  {
+    "objectID": "symptomes.html",
+    "href": "symptomes.html",
+    "title": "Analyse des symptômes",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026\nCette page compare les signes cliniques des 33 cas confirmés et des 148 cas suspects non confirmés (RT-PCR négative). Les 0 cas en attente de résultat sont exclus. Une case « sans information » n’est jamais comptée comme « non » : le cas est retiré du calcul pour ce symptôme."
+  },
+  {
+    "objectID": "symptomes.html#fréquence-de-chaque-symptôme",
+    "href": "symptomes.html#fréquence-de-chaque-symptôme",
+    "title": "Analyse des symptômes",
+    "section": "Fréquence de chaque symptôme",
+    "text": "Fréquence de chaque symptôme\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : chaque ligne relie la fréquence d’un symptôme chez les non-confirmés (bleu) et chez les confirmés (rouge). Plus l’écart est grand, mieux le symptôme distingue les cas confirmés. L’odds ratio (OR) mesure cette association : un OR supérieur à 1 signifie que le symptôme est plus fréquent chez les confirmés. Avec 33 cas confirmés, les intervalles de confiance sont larges et une différence non significative (p ≥ 0,05) ne prouve pas l’absence d’association."
+  },
+  {
+    "objectID": "symptomes.html#combinaisons-de-signes-majeurs",
+    "href": "symptomes.html#combinaisons-de-signes-majeurs",
+    "title": "Analyse des symptômes",
+    "section": "Combinaisons de signes majeurs",
+    "text": "Combinaisons de signes majeurs\nCombinaisons de la fièvre, de l’éruption cutanée et des adénopathies, chez les cas pour lesquels les trois signes sont renseignés.\n\n\n\n\n\n\n\n\n\n\nLecture : chaque ligne est une combinaison de signes (points noirs reliés) ; la barre donne le nombre de cas qui la présentent, découpé en confirmés (rouge) et non confirmés (bleu). Le pourcentage de confirmés n’est affiché qu’à partir de 5 cas. Analyse portant sur 169 cas (12 exclus faute d’information sur l’un des trois signes)."
+  },
+  {
+    "objectID": "symptomes.html#combinaisons-des-types-de-lésions",
+    "href": "symptomes.html#combinaisons-des-types-de-lésions",
+    "title": "Analyse des symptômes",
+    "section": "Combinaisons des types de lésions",
+    "text": "Combinaisons des types de lésions\nStades des lésions cutanées (macules, papules, vésicules, pustules, croûtes) chez les cas présentant une éruption.\n\n\n\n\n\n\n\n\n\n\nLecture : classiquement, les lésions du mpox évoluent au même rythme, alors que celles de la varicelle coexistent à des stades différents ; mais pendant l’épidémie mondiale de clade IIb de 2022, des lésions à des stades différents ont souvent été observées chez les cas de mpox. Le stade des lésions ne permet donc pas, à lui seul, de distinguer les deux maladies. Analyse portant sur 114 cas avec éruption (22 exclus faute d’information sur l’un des types de lésions). Les 12 combinaisons les plus fréquentes sont affichées."
+  },
+  {
+    "objectID": "symptomes.html#performance-des-signes-pour-prédire-la-confirmation",
+    "href": "symptomes.html#performance-des-signes-pour-prédire-la-confirmation",
+    "title": "Analyse des symptômes",
+    "section": "Performance des signes pour prédire la confirmation",
+    "text": "Performance des signes pour prédire la confirmation\n\n\n\n\n\n\n\nLecture : la sensibilité est la part des cas confirmés qui présentaient le signe ; la spécificité, la part des non-confirmés qui ne le présentaient pas. La valeur prédictive positive (VPP) est la probabilité qu’un cas présentant le signe soit confirmé, dans la population testée ici : elle dépend du taux de positivité (18,2 %) et n’est pas transposable à une autre population. Ces indicateurs servent à évaluer la définition de cas."
+  },
+  {
+    "objectID": "cartes.html",
+    "href": "cartes.html",
+    "title": "Cartes",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026\nUtilisez le menu en haut à gauche de chaque carte pour zoomer sur une région ; survolez une aire pour voir ses chiffres. Les aires en gris n’ont notifié aucun cas."
+  },
+  {
+    "objectID": "cartes.html#cas-cumulés-par-aire-sanitaire",
+    "href": "cartes.html#cas-cumulés-par-aire-sanitaire",
+    "title": "Cartes",
+    "section": "Cas cumulés par aire sanitaire",
+    "text": "Cas cumulés par aire sanitaire\n\nCas notifiésCas confirmésPar région sanitaire\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : 34 des 117 aires sanitaires du pays ont notifié au moins un cas, et 12 ont au moins un cas confirmé. La région de Bissau (SAB) regroupe 96 des 181 cas notifiés sur une petite surface : le zoom « SAB (Bissau) » permet d’y distinguer les aires."
+  },
+  {
+    "objectID": "cartes.html#évolution-semaine-par-semaine",
+    "href": "cartes.html#évolution-semaine-par-semaine",
+    "title": "Cartes",
+    "section": "Évolution semaine par semaine",
+    "text": "Évolution semaine par semaine\n\n\n\n\n▶ Lecture\n\n\n\n\n\n\n\n\n\nLecture : déplacez le curseur ou cliquez sur « Lecture » pour faire défiler les semaines depuis juin 2026 (semaine de début des symptômes). En haut, les cas de la semaine ; en bas, le cumul depuis le 1er juin. Les aires de Bissau sont petites à l’échelle du pays : pour les détailler, utilisez le zoom « SAB (Bissau) » des cartes interactives plus haut."
+  },
+  {
+    "objectID": "cartes.html#statut-des-aires-sanitaires-touchées",
+    "href": "cartes.html#statut-des-aires-sanitaires-touchées",
+    "title": "Cartes",
+    "section": "Statut des aires sanitaires touchées",
+    "text": "Statut des aires sanitaires touchées\n\n\n\n\n\n\n\nStatut établi d’après la date de notification du dernier cas confirmé de chaque aire : moins de 21 jours, transmission possible ; de 21 à 42 jours, surveillance renforcée ; plus de 42 jours, aucun cas pendant deux périodes d’incubation (21 jours chacune). Les aires sans cas confirmé figurent si elles ont notifié un cas suspect au cours des 21 derniers jours. Situation : 4 aire(s) où la transmission est possible, 4 en surveillance renforcée, 4 sans cas depuis plus de 42 jours."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Épidémie de mpox en Guinée-Bissau",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026\nCas notifiés\n181\nsuspects, tous statuts\n\n\nCas confirmés\n33\nRT-PCR positive\n\n\nTaux de positivité\n18,2 %\nparmi les 181 cas testés avec résultat\n\n\nRégions touchées\n3\navec au moins un cas confirmé, dans 12 aires sanitaires\n\n\nContacts en suivi\n0\nsur 387 contacts identifiés\n\n\nClade\nIIb\nséquençage du 5 juillet 2026"
+  },
+  {
+    "objectID": "index.html#contexte",
+    "href": "index.html#contexte",
+    "title": "Épidémie de mpox en Guinée-Bissau",
+    "section": "Contexte",
+    "text": "Contexte\nLe premier cas de mpox de l’épidémie actuelle a présenté ses premiers symptômes le 13 juin 2026 ; il a été confirmé au laboratoire le 23 juin 2026. Le Ministère de la Santé publique (MINSAP) a déclaré officiellement l’épidémie le 4 juillet 2026, et le séquençage a identifié le clade IIb le 5 juillet 2026. La riposte est coordonnée par le système de gestion de l’incident (SGI-Mpox), activé le 1er juillet 2026, avec l’appui de l’Institut national de santé publique (INASA) et de l’OMS.\nL’épidémie a d’abord touché la région sanitaire de Bissau (SAB), puis Biombo (premier cas confirmé le 13 juillet 2026) et Bafatá (14 septembre 2026). Ce tableau de bord présente les données de la liste linéaire des cas et de la base de suivi des contacts ; il est mis à jour à chaque publication des données par l’INASA."
+  },
+  {
+    "objectID": "index.html#situation-en-bref",
+    "href": "index.html#situation-en-bref",
+    "title": "Épidémie de mpox en Guinée-Bissau",
+    "section": "Situation en bref",
+    "text": "Situation en bref\n\n20 cas notifiés au cours des 14 derniers jours (du 6 oct. 2026 au 19 oct. 2026), dont 5 confirmé(s) (−35 % par rapport aux deux semaines précédentes).\nDernier cas confirmé notifié le 15 oct. 2026, soit il y a 4 jours.\nLes cas confirmés se répartissent ainsi : SAB (Bissau) (24), Biombo (5), Bafatá (4).\n0 contacts sont encore en cours de suivi ; 252 ont terminé les 21 jours de suivi et 3 sont devenus cas.\nAu 12 oct. 2026 (dernière fenêtre disponible), Rt est estimé à 1,13 (IC 95 % : 0,41–2,19), soit au-dessus de 1 pour l’estimation centrale, mais l’intervalle de crédibilité contient 1 : on ne peut pas conclure à une progression. Détail sur la page Situation épidémiologique."
+  },
+  {
+    "objectID": "index.html#chronologie-de-la-riposte",
+    "href": "index.html#chronologie-de-la-riposte",
+    "title": "Épidémie de mpox en Guinée-Bissau",
+    "section": "Chronologie de la riposte",
+    "text": "Chronologie de la riposte\n\n\n\n\n\n\n\n\n\n\n\n\n\nLa courbe sous la frise montre les cas par semaine de début des symptômes."
+  },
+  {
+    "objectID": "situation.html",
+    "href": "situation.html",
+    "title": "Situation épidémiologique",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026"
+  },
+  {
+    "objectID": "situation.html#courbe-épidémique",
+    "href": "situation.html#courbe-épidémique",
+    "title": "Situation épidémiologique",
+    "section": "Courbe épidémique",
+    "text": "Courbe épidémique\nChoisissez une région dans le menu en haut à gauche du graphique pour afficher sa courbe. Les barres sont empilées par statut ; survolez une barre pour voir le détail.\n\nSemaine de début des symptômesSemaine de notification\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : la date de début des symptômes situe le moment de l’infection ; la date de notification reflète l’activité de la surveillance. Les deux dernières semaines sont incomplètes (délais de notification et de résultat) et seront probablement revues à la hausse. Tous les cas ont une date de début des symptômes renseignée."
+  },
+  {
+    "objectID": "situation.html#taux-de-positivité-par-semaine",
+    "href": "situation.html#taux-de-positivité-par-semaine",
+    "title": "Situation épidémiologique",
+    "section": "Taux de positivité par semaine",
+    "text": "Taux de positivité par semaine\n\n\n\n\n\n\n\nLecture : la taille des points est proportionnelle au nombre de cas testés dans la semaine. Quand le taux de positivité baisse alors que les notifications augmentent, c’est en général que la recherche de cas s’est élargie (définition de cas plus sensible, recherche active). Depuis juin 2026 : 19,1 % (33/173)."
+  },
+  {
+    "objectID": "situation.html#synthèse-par-région-sanitaire",
+    "href": "situation.html#synthèse-par-région-sanitaire",
+    "title": "Situation épidémiologique",
+    "section": "Synthèse par région sanitaire",
+    "text": "Synthèse par région sanitaire\n\n\n\n\n\n\n\nLes colonnes S40, S41, S42, S43 donnent, pour les 4 dernières semaines épidémiologiques (début des symptômes), « cas notifiés / dont confirmés ». Les décès ne sont pas encore collectés par le formulaire de notification."
+  },
+  {
+    "objectID": "situation.html#cas-notifiés-par-région-et-par-semaine",
+    "href": "situation.html#cas-notifiés-par-région-et-par-semaine",
+    "title": "Situation épidémiologique",
+    "section": "Cas notifiés par région et par semaine",
+    "text": "Cas notifiés par région et par semaine\n\n\n\n\n\n\n\nLecture : chaque case donne le nombre de cas notifiés (tous statuts) d’une région pendant une semaine ; une case grise signifie aucun cas. On y voit l’extension géographique de l’épidémie et les régions où les notifications se poursuivent."
+  },
+  {
+    "objectID": "situation.html#situation-par-région-avec-les-aires-sanitaires-touchées",
+    "href": "situation.html#situation-par-région-avec-les-aires-sanitaires-touchées",
+    "title": "Situation épidémiologique",
+    "section": "Situation par région, avec les aires sanitaires touchées",
+    "text": "Situation par région, avec les aires sanitaires touchées\nSélectionnez un onglet pour voir, dans une région, les aires sanitaires ayant notifié au moins un cas.\n\nSAB (Bissau)BiomboBafatáGabúBolamaTombaliCacheuOioBijagósQuínara\n\n\n96 cas notifiés, dont 24 confirmé(s), dans 9 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nCMI\n\n\n44\n\n\n14\n\n\n13 juil. 2026\n\n\n13 oct. 2026\n\n\n6\n\n\n\n\nBelem\n\n\n4\n\n\n3\n\n\n12 août 2026\n\n\n25 sept. 2026\n\n\n24\n\n\n\n\nBairro Militar\n\n\n13\n\n\n2\n\n\n10 juil. 2026\n\n\n3 oct. 2026\n\n\n16\n\n\n\n\nAntula\n\n\n10\n\n\n1\n\n\n19 juil. 2026\n\n\n12 oct. 2026\n\n\n7\n\n\n\n\nBandim\n\n\n8\n\n\n1\n\n\n15 mai 2026\n\n\n15 sept. 2026\n\n\n34\n\n\n\n\nPlack 2\n\n\n8\n\n\n1\n\n\n13 juil. 2026\n\n\n15 sept. 2026\n\n\n34\n\n\n\n\nCuntum\n\n\n1\n\n\n1\n\n\n22 juin 2026\n\n\n22 juin 2026\n\n\n119\n\n\n\n\nLuanda\n\n\n1\n\n\n1\n\n\n20 sept. 2026\n\n\n20 sept. 2026\n\n\n29\n\n\n\n\nBairro de Ajuda\n\n\n7\n\n\n0\n\n\n28 août 2026\n\n\n16 oct. 2026\n\n\n3\n\n\n\n\n\n\n\n\n30 cas notifiés, dont 5 confirmé(s), dans 6 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nSafim\n\n\n10\n\n\n3\n\n\n13 juil. 2026\n\n\n12 oct. 2026\n\n\n7\n\n\n\n\nCumura\n\n\n7\n\n\n1\n\n\n7 juil. 2026\n\n\n17 sept. 2026\n\n\n32\n\n\n\n\nPrabis\n\n\n4\n\n\n1\n\n\n25 sept. 2026\n\n\n15 oct. 2026\n\n\n4\n\n\n\n\nQuinhamel\n\n\n6\n\n\n0\n\n\n29 janv. 2026\n\n\n1 oct. 2026\n\n\n18\n\n\n\n\nOndame\n\n\n2\n\n\n0\n\n\n7 sept. 2026\n\n\n7 sept. 2026\n\n\n42\n\n\n\n\nIlonde\n\n\n1\n\n\n0\n\n\n28 juil. 2026\n\n\n28 juil. 2026\n\n\n83\n\n\n\n\n\n\n\n\n16 cas notifiés, dont 4 confirmé(s), dans 2 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nBafata\n\n\n13\n\n\n4\n\n\n7 avr. 2026\n\n\n12 oct. 2026\n\n\n7\n\n\n\n\nBambadinca\n\n\n3\n\n\n0\n\n\n5 avr. 2026\n\n\n8 avr. 2026\n\n\n194\n\n\n\n\n\n\n\n\n14 cas notifiés, dont 0 confirmé(s), dans 6 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nGabu\n\n\n7\n\n\n0\n\n\n14 juil. 2026\n\n\n29 sept. 2026\n\n\n20\n\n\n\n\nPitche\n\n\n2\n\n\n0\n\n\n26 sept. 2026\n\n\n27 sept. 2026\n\n\n22\n\n\n\n\nSonaco\n\n\n2\n\n\n0\n\n\n21 sept. 2026\n\n\n21 sept. 2026\n\n\n28\n\n\n\n\nBuruntuma\n\n\n1\n\n\n0\n\n\n1 sept. 2026\n\n\n1 sept. 2026\n\n\n48\n\n\n\n\nCanjufa\n\n\n1\n\n\n0\n\n\n13 juil. 2026\n\n\n13 juil. 2026\n\n\n98\n\n\n\n\nFasse\n\n\n1\n\n\n0\n\n\n22 juil. 2026\n\n\n22 juil. 2026\n\n\n89\n\n\n\n\n\n\n\n\n10 cas notifiés, dont 0 confirmé(s), dans 1 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nBolama\n\n\n10\n\n\n0\n\n\n17 sept. 2026\n\n\n12 oct. 2026\n\n\n7\n\n\n\n\n\n\n\n\n9 cas notifiés, dont 0 confirmé(s), dans 4 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nCalaque\n\n\n3\n\n\n0\n\n\n21 août 2026\n\n\n24 août 2026\n\n\n56\n\n\n\n\nCatio\n\n\n3\n\n\n0\n\n\n28 juil. 2026\n\n\n1 sept. 2026\n\n\n48\n\n\n\n\nTimbo\n\n\n2\n\n\n0\n\n\n3 août 2026\n\n\n18 sept. 2026\n\n\n31\n\n\n\n\nQuebo\n\n\n1\n\n\n0\n\n\n2 août 2026\n\n\n2 août 2026\n\n\n78\n\n\n\n\n\n\n\n\n2 cas notifiés, dont 0 confirmé(s), dans 2 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nCacheu\n\n\n1\n\n\n0\n\n\n23 avr. 2026\n\n\n23 avr. 2026\n\n\n179\n\n\n\n\nSao Domingos\n\n\n1\n\n\n0\n\n\n26 juil. 2026\n\n\n26 juil. 2026\n\n\n85\n\n\n\n\n\n\n\n\n2 cas notifiés, dont 0 confirmé(s), dans 2 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nMansaba\n\n\n1\n\n\n0\n\n\n20 août 2026\n\n\n20 août 2026\n\n\n60\n\n\n\n\nNhacra\n\n\n1\n\n\n0\n\n\n19 août 2026\n\n\n19 août 2026\n\n\n61\n\n\n\n\n\n\n\n\n1 cas notifiés, dont 0 confirmé(s), dans 1 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nBubaque\n\n\n1\n\n\n0\n\n\n7 août 2026\n\n\n7 août 2026\n\n\n73\n\n\n\n\n\n\n\n\n1 cas notifiés, dont 0 confirmé(s), dans 1 aire(s) sanitaire(s).\n\n\n\n\n\nAire\n\n\nNotifiés\n\n\nConfirmés\n\n\nPremier cas\n\n\nDernier cas\n\n\nJours sans nouveau cas\n\n\n\n\n\n\nBuba\n\n\n1\n\n\n0\n\n\n12 sept. 2026\n\n\n12 sept. 2026\n\n\n37"
+  },
+  {
+    "objectID": "situation.html#nombre-de-reproduction-effectif-rt",
+    "href": "situation.html#nombre-de-reproduction-effectif-rt",
+    "title": "Situation épidémiologique",
+    "section": "Nombre de reproduction effectif (Rt)",
+    "text": "Nombre de reproduction effectif (Rt)\n\n\n\n\n\n\n\nAu 12 oct. 2026 (dernière fenêtre disponible), Rt est estimé à 1,13 (IC 95 % : 0,41–2,19), soit au-dessus de 1 pour l’estimation centrale, mais l’intervalle de crédibilité contient 1 : on ne peut pas conclure à une progression. Il y a deux semaines (28 sept. 2026), il était de 1,45 : la tendance récente est à la baisse, après être passé par 0,68 le 7 oct. 2026. Sur les 4 dernières semaines, l’estimation centrale a été supérieure à 1 pendant 57,1 % des jours, et l’intervalle entièrement au-dessus de 1 pendant 0,0 %. La valeur la plus haute (5,64, le 11 juil. 2026) date d’une période où les cas étaient peu nombreux : quelques cas groupés suffisent alors à faire monter fortement l’estimation. Les estimations des derniers jours sont les moins fiables : les cas dont les symptômes ont commencé récemment ne sont pas encore tous notifiés, ce qui tire Rt vers le bas en fin de période.\n\n\nComment lire Rt : Rt est le nombre moyen de personnes infectées par chaque cas à une date donnée ; au-dessus de 1 (ligne pointillée), l’épidémie progresse ; en dessous, elle recule. Il est estimé sur des fenêtres glissantes de 14 jours à partir des seuls cas confirmés, par date de début des symptômes (méthode paramétrique EpiEstim), avec un intervalle sériel de 8,5 jours en moyenne (écart-type 5,0 jours) tiré de l’épidémie de 2022 aux États-Unis (Miura et al., Emerg Infect Dis 2023), et non mesuré en Guinée-Bissau. Avec 33 cas confirmés, les intervalles sont larges : l’interprétation ci-dessus est recalculée à chaque mise à jour et ne qualifie une tendance de nette que si tout l’intervalle est d’un côté de 1."
+  },
+  {
+    "objectID": "contacts.html",
+    "href": "contacts.html",
+    "title": "Suivi des contacts",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026\nBase des contacts : dernier contact enregistré le 26 sept. 2026, dernière visite de suivi le 16 oct. 2026\n\nBase des contacts en cours de mise à jour : les chiffres de cette page peuvent être incomplets.\nContacts identifiés\n387\naprès suppression de 2 doublon(s)\n\n\nEn cours de suivi\n0\n0 terminent leurs 21 jours d'ici 7 jours\n\n\nSuivi terminé (21 j)\n252\n65,1 % ; 132 ont dépassé la fin de suivi sans clôture\n\n\nDevenus cas\n3\nparmi les contacts suivis\n\n\nCas index\n28\n13,8 contacts par cas index en moyenne\n\n\nVisites de suivi\n2 917\n1 avec symptômes signalés"
+  },
+  {
+    "objectID": "contacts.html#contacts-sous-suivi-au-fil-du-temps",
+    "href": "contacts.html#contacts-sous-suivi-au-fil-du-temps",
+    "title": "Suivi des contacts",
+    "section": "Contacts sous suivi au fil du temps",
+    "text": "Contacts sous suivi au fil du temps\n\n\n\n\n\n\n\nLecture : nombre de contacts se trouvant, chaque jour, dans leur période de suivi de 21 jours (du début du suivi à la date de fin prévue). Au 19 oct. 2026, 0 contacts sont dans cette période ; la base en déclare 0 « en cours de suivi ». Un écart entre ces deux chiffres signale des statuts à mettre à jour dans la base.\n\n\nNouveaux contacts par semaine, selon leur statut actuel"
+  },
+  {
+    "objectID": "contacts.html#localisation-des-contacts",
+    "href": "contacts.html#localisation-des-contacts",
+    "title": "Suivi des contacts",
+    "section": "Localisation des contacts",
+    "text": "Localisation des contacts\n\nContacts en cours de suiviTous les contacts\n\n\n\n\nAucun contact enregistré comme en cours de suivi à cette date. Vérifier que la base des contacts est à jour.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLocalisation déclarée dans la base de contacts (lieu de résidence du contact), qui peut différer de celle du cas index. 14 contact(s) n’ont pas d’aire sanitaire reconnue dans le fond de carte et ne figurent pas sur la carte."
+  },
+  {
+    "objectID": "contacts.html#apparition-de-symptômes-chez-les-contacts",
+    "href": "contacts.html#apparition-de-symptômes-chez-les-contacts",
+    "title": "Suivi des contacts",
+    "section": "Apparition de symptômes chez les contacts",
+    "text": "Apparition de symptômes chez les contacts\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : 1 des 2 917 visites de suivi (0,0 %) ont relevé au moins un symptôme ; cela concerne 1 contact(s) sur 387. 3 contact(s) sont devenus cas. Chaque contact a reçu en médiane 6 visites."
+  },
+  {
+    "objectID": "contacts.html#contacts-par-cas-index",
+    "href": "contacts.html#contacts-par-cas-index",
+    "title": "Suivi des contacts",
+    "section": "Contacts par cas index",
+    "text": "Contacts par cas index\n\n\n\n\n\n\n\nLecture : les 20 cas index ayant généré le plus de contacts (sur 28), avec le statut de suivi de ces contacts. Les cas index sont numérotés par ordre décroissant de contacts : leurs identifiants ne sont pas publiés. Médiane : 15.5 contacts par cas index (de 1 à 38) ; 14 cas index correspondent à un cas confirmé de la liste linéaire."
+  },
+  {
+    "objectID": "contacts.html#type-dexposition",
+    "href": "contacts.html#type-dexposition",
+    "title": "Suivi des contacts",
+    "section": "Type d’exposition",
+    "text": "Type d’exposition"
+  },
+  {
+    "objectID": "profil.html",
+    "href": "profil.html",
+    "title": "Profil des cas",
+    "section": "",
+    "text": "Données de la S43-2026, mise à jour le 19 oct. 2026"
+  },
+  {
+    "objectID": "profil.html#pyramide-des-âges",
+    "href": "profil.html#pyramide-des-âges",
+    "title": "Profil des cas",
+    "section": "Pyramide des âges",
+    "text": "Pyramide des âges\n\nCas confirmésTous les cas notifiés\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : parmi les 33 cas confirmés, 19 sont des hommes et 14 des femmes (rapport H/F : 1,36) ; l’âge médian est de 28 ans. 4 cas confirmé(s) ont moins de 15 ans."
+  },
+  {
+    "objectID": "profil.html#délais-de-prise-en-charge",
+    "href": "profil.html#délais-de-prise-en-charge",
+    "title": "Profil des cas",
+    "section": "Délais de prise en charge",
+    "text": "Délais de prise en charge\n\n\n\n\n\n\n\n\n\n\n\n\n\nLecture : le délai entre le début des symptômes et la notification mesure la rapidité de la détection ; les deux délais suivants, celle de la confirmation au laboratoire. Les boîtes vont du premier au troisième quartile, le trait central est la médiane. 15 délais négatifs ou supérieurs à 60 jours, probablement dus à des erreurs de saisie de dates, sont exclus (voir la page Méthodes)."
+  },
+  {
+    "objectID": "profil.html#type-déchantillon",
+    "href": "profil.html#type-déchantillon",
+    "title": "Profil des cas",
+    "section": "Type d’échantillon",
+    "text": "Type d’échantillon"
+  }
+]
