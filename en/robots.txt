@@ -1,0 +1,1 @@
+Sitemap: https://inasa-bg.github.io/mpox-dashboard/sitemap.xml
